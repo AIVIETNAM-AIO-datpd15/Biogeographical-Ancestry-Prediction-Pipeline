@@ -254,7 +254,7 @@ def evaluate_candidates(
             y_train,
             cv=cv,
             scoring=scorer,
-            n_jobs=-1,  # Đẩy lên tối đa nhân CPU xử lý song song các fold tăng tốc độ tính toán
+            n_jobs=1,  # Đặt 1 để tránh lỗi MemoryError / WinError 1450 trên Windows khi RAM hạn chế
             return_train_score=False,
         )
         row: dict[str, float | str] = {"model": model_name}
