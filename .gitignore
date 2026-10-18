@@ -231,9 +231,11 @@ reports/*/*
 !reports/*/figures/
 reports/*/figures/*
 !reports/*/figures/.gitkeep
+!reports/*/figures/*.png
 !reports/figures/
 reports/figures/*
 !reports/figures/.gitkeep
+!reports/figures/*.png
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/*/
